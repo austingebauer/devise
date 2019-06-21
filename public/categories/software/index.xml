@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on austing.dev</title>
+    <link>http://example.com/categories/software/</link>
+    <description>Recent content in software on austing.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jun 2018 16:54:29 -0400</lastBuildDate>
+    
+	<atom:link href="http://example.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development of NGINX Dynamic Modules</title>
+      <link>http://example.com/posts/nginx-module-development/</link>
+      <pubDate>Tue, 19 Jun 2018 16:54:29 -0400</pubDate>
+      
+      <guid>http://example.com/posts/nginx-module-development/</guid>
+      <description>NGINX Dynamic Module Development Guide The purpose of this guide is to teach basic NGINX dynamic module development and usage.
+Table of Contents TODO: Generate TOC when complete
+Development Setup First, we need to set up a development environment for our NGINX module.
+Follow the steps below to set it up.
+0: Install NGINX open source  Follow the NGINX documentation to install NGINX open source
+ Recommend to install on linux  Take note of the version of your NGINX installation</description>
+    </item>
+    
+    <item>
+      <title>Techniques used in Recursive Ray Tracing</title>
+      <link>http://example.com/posts/ray-tracing/</link>
+      <pubDate>Wed, 23 May 2018 16:10:36 -0400</pubDate>
+      
+      <guid>http://example.com/posts/ray-tracing/</guid>
+      <description>Ray tracing $$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$</description>
+    </item>
+    
+    <item>
+      <title>Using gRPC Gateway with Protocol Buffers</title>
+      <link>http://example.com/posts/grpc_gateway/</link>
+      <pubDate>Sat, 20 Jan 2018 16:54:29 -0400</pubDate>
+      
+      <guid>http://example.com/posts/grpc_gateway/</guid>
+      <description>Some heading Some text from juree. Some text from juree. Some text from juree. Some text from juree.
+ list of things   list of ordered things  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77  // package tuple package tuple import ( &amp;#34;errors&amp;#34; &amp;#34;log&amp;#34; &amp;#34;github.</description>
+    </item>
+    
+  </channel>
+</rss>

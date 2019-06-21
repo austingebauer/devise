@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graphics on austing.dev</title>
+    <link>http://example.com/tags/graphics/</link>
+    <description>Recent content in graphics on austing.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 May 2018 16:10:36 -0400</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Techniques used in Recursive Ray Tracing</title>
+      <link>http://example.com/posts/ray-tracing/</link>
+      <pubDate>Wed, 23 May 2018 16:10:36 -0400</pubDate>
+      
+      <guid>http://example.com/posts/ray-tracing/</guid>
+      <description>Ray tracing $$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$</description>
+    </item>
+    
+  </channel>
+</rss>

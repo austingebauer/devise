@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on austing.dev</title>
+    <link>http://example.com/tags/nginx/</link>
+    <description>Recent content in nginx on austing.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jun 2018 16:54:29 -0400</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development of NGINX Dynamic Modules</title>
+      <link>http://example.com/posts/nginx-module-development/</link>
+      <pubDate>Tue, 19 Jun 2018 16:54:29 -0400</pubDate>
+      
+      <guid>http://example.com/posts/nginx-module-development/</guid>
+      <description>NGINX Dynamic Module Development Guide The purpose of this guide is to teach basic NGINX dynamic module development and usage.
+Table of Contents TODO: Generate TOC when complete
+Development Setup First, we need to set up a development environment for our NGINX module.
+Follow the steps below to set it up.
+0: Install NGINX open source  Follow the NGINX documentation to install NGINX open source
+ Recommend to install on linux  Take note of the version of your NGINX installation</description>
+    </item>
+    
+  </channel>
+</rss>

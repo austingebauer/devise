@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.com/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/posts/nginx-module-development/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/posts/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/c/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/networking/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/networking/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/nginx/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/software/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/software/</loc>
+    <lastmod>2018-06-19T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/posts/ray-tracing/</loc>
+    <lastmod>2018-05-23T16:10:36-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/golang/</loc>
+    <lastmod>2018-05-23T16:10:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/graphics/</loc>
+    <lastmod>2018-05-23T16:10:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/ray-tracing/</loc>
+    <lastmod>2018-05-23T16:10:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/rendering/</loc>
+    <lastmod>2018-05-23T16:10:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/posts/grpc_gateway/</loc>
+    <lastmod>2018-01-20T16:54:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/grpc/</loc>
+    <lastmod>2018-01-20T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/protobuf/</loc>
+    <lastmod>2018-01-20T16:54:29-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
