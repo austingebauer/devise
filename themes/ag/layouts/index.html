@@ -1,0 +1,44 @@
+{{ define "main" }}
+    <div class="container pl-5 ml-4">
+        {{ $recentposts := 10 }}
+        {{ if .Params.recentposts }}
+            {{ $recentposts = .Params.recentposts }}
+        {{ end }}
+
+        <div class="pb-3">
+            <h5><span class="badge category">Software</span></h5>
+            <ul class="list-unstyled">
+                {{ range first $recentposts (where .Pages "Type" "posts" ) }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="pt-3 pb-3">
+            <h5><span class="badge badge-dark">Networking</span></h5>
+            <ul class="list-unstyled">
+                {{ range first $recentposts (where .Pages "Type" "posts" ) }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="pt-3 pb-3">
+            <h5><span class="badge badge-dark">Year in Review</span></h5>
+            <ul class="list-unstyled">
+                {{ range first $recentposts (where .Pages "Type" "posts" ) }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+{{ end }}

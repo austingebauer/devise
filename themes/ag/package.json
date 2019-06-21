@@ -1,0 +1,24 @@
+{
+  "name": "ag",
+  "version": "1.0.0",
+  "description": "ag hugo theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --include-path node_modules static/css/custom.scss static/css/theme.css",
+    "watch": "node-sass --watch --include-path node_modules static/css/custom.scss static/css/theme.css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.9.4"
+  },
+  "keywords": [
+    "hugo",
+    "theme"
+  ],
+  "author": "Austin Gebauer",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  }
+}

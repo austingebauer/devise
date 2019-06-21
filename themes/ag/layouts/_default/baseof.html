@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body>
+        <div id="content" class="mx-auto">
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
+        </div>
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML"></script>
+</html>

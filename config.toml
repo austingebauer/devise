@@ -1,0 +1,26 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "austing.dev"
+theme = "ag"
+relativeURLs = true
+
+# Use syntax highlighting of the theme
+pygmentsUseClasses = false
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "borland"
+pygmentsOptions = "linenos=table"
+
+# Defines menu items for the theme
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 110
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 120

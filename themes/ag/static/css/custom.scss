@@ -1,0 +1,72 @@
+// === Import Bootstrap and variable overrides ===
+$body-bg: #f8f9fa;
+$body-color: #333333;
+$font-family-base: "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 0.95rem;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// === Import Font Awesome ===
+$fa-font-path: "./webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+.fa-1x {
+  font-size: 0.9em !important;
+}
+
+// === Custom Styles ===
+#content {
+  width: 100%;
+  max-width: 650px;
+}
+
+#me {
+  width: 120px;
+  height: 120px;
+  border: solid 5px white;
+  box-shadow: 0px 10px 7px -10px rgba(0,0,0,0.6);
+}
+
+#nav-links {
+  position: relative;
+  left: -5px;
+}
+
+#nav-social {
+  position: relative;
+  left: 1px;
+}
+
+.category {
+  color: $body-bg;
+  background-color: $body-color;
+}
+
+.category::before {
+  content: "";
+  background-color: $body-color;
+  position: inline-block;
+  width: 10px;
+  height: 10px;
+  left: -40px;
+}
+
+header h2 {
+  letter-spacing: -0.085rem;
+  font-weight: 700;
+}
+
+// === Media breakpoints ===
+// 576px
+@include media-breakpoint-up(sm) {}
+
+// 768px
+@include media-breakpoint-up(md) {}
+
+// 992px
+@include media-breakpoint-up(lg) {}
+
+// 1200px
+@include media-breakpoint-up(xl) {}
