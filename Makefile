@@ -10,3 +10,6 @@ build:
 
 watch: build
 	npm run --prefix $(THEME_DIR) watch
+
+publish: build
+	hugo
