@@ -11343,10 +11343,6 @@ readers do not read off random characters that represent icons */
   width: 100%;
   max-width: 650px; }
 
-#home-list {
-  position: relative;
-  left: 15px; }
-
 #me {
   width: 120px;
   height: 120px;
