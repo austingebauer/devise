@@ -3,7 +3,7 @@
 THEME_DIR = themes/ag
 
 server:
-	hugo server --watch --verbose --buildDrafts --cleanDestinationDir --disableFastRender
+	hugo server --watch --verbose --cleanDestinationDir --disableFastRender
 
 build:
 	npm run --prefix $(THEME_DIR) build

@@ -1,9 +1,9 @@
 ---
 title: "Development of NGINX Dynamic Modules"
 date: 2018-06-19T16:54:29-04:00
-draft: false
+draft: true
 tags: ["nginx", "c", "networking", "software"]
-categories: ["software", "networking"]
+categories: ["Software", "Nginx"]
 ---
 
 # NGINX Dynamic Module Development Guide
@@ -59,7 +59,7 @@ apt-get install -y \
 
 ### 3: Create the NGINX module source
 
-To begin writing an NGINX module, we'll create a directory and two files.
+To begin writing an Nginx module, we'll create a directory and two files.
 
 Create a directory for the module and change into it
 ```bash
@@ -101,9 +101,16 @@ ngx_example_module/
 
 ## Write a basic module
 
-General Concepts
+NGINX modules are written in C. You'll need to be comfortable with C to use this guide.
 
-Links to documents with more details on some type of module.
+NGINX modules have three roles:
+- handlers
+- filters
+- load-balancers
+
+The "core" of Nginx simply takes care of all the network and application protocols and sets up the sequence of modules that are eligible to process a request.
+
+
 
 ## Compile the module
 

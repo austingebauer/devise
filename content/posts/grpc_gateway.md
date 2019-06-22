@@ -3,12 +3,8 @@ title: "Using gRPC Gateway with Protocol Buffers"
 date: 2018-01-20T16:54:29-04:00
 draft: false
 tags: ["grpc", "protobuf", "golang"]
-categories: ["software"]
+categories: ["Software"]
 ---
-
-### Some heading
-
-Some text from juree. Some text from juree. Some text from juree. Some text from juree.
 
 - list
 - of 

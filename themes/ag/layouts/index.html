@@ -1,44 +1,36 @@
 {{ define "main" }}
-    <div class="container pl-5 ml-4">
+    <div id="home-list" class="container pl-5 ml-4">
         {{ $recentposts := 10 }}
         {{ if .Params.recentposts }}
             {{ $recentposts = .Params.recentposts }}
         {{ end }}
 
+        {{/* Display recent posts*/}}
         <div class="pb-3">
-            <h5><span class="badge category">Software</span></h5>
+            <h5><span class="badge category">Recent</span></h5>
             <ul class="list-unstyled">
                 {{ range first $recentposts (where .Pages "Type" "posts" ) }}
                     <li>
                         {{ .Date.Format "Jan 2 2006" }}
-                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
+                        <a href="{{ .URL }}">{{ .Title }}</a>
                     </li>
                 {{ end }}
             </ul>
         </div>
 
-        <div class="pt-3 pb-3">
-            <h5><span class="badge badge-dark">Networking</span></h5>
-            <ul class="list-unstyled">
-                {{ range first $recentposts (where .Pages "Type" "posts" ) }}
-                    <li>
-                        {{ .Date.Format "Jan 2 2006" }}
-                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
-                    </li>
-                {{ end }}
-            </ul>
-        </div>
-
-        <div class="pt-3 pb-3">
-            <h5><span class="badge badge-dark">Year in Review</span></h5>
-            <ul class="list-unstyled">
-                {{ range first $recentposts (where .Pages "Type" "posts" ) }}
-                    <li>
-                        {{ .Date.Format "Jan 2 2006" }}
-                        <a href="{{ .URL | relURL}}">{{ .Title }}</a>
-                    </li>
-                {{ end }}
-            </ul>
-        </div>
+        {{/* Display categories by count and their posts */}}
+        {{ range .Site.Taxonomies.categories.ByCount }}
+            <div class="pb-3">
+                <h5><span class="badge category">{{ humanize .Name }}</span></h5>
+                <ul class="list-unstyled">
+                    {{ range .Pages }}
+                        <li>
+                            {{ .Date.Format "Jan 2 2006" }}
+                            <a href="{{ .URL }}">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
     </div>
 {{ end }}
