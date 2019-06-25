@@ -1,34 +1,7 @@
 {{ define "main" }}
     <div class="container">
-    <div>
-        <h1>{{ .Title | markdownify }}</h1>
-        {{ if .Params.Subtitle }}
-            <h2>{{ .Params.Subtitle | markdownify }}</h2>
-        {{ end }}
-
-        <p>
-            <a href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006"  }}</a>
-            {{ range .Params.tags }}
-                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
-            {{ end }}
-        </p>
-
         <article>
             {{ .Content }}
         </article>
-    </div>
-
-    {{ if or .Next .Prev }}
-        <div>
-            {{ if .Prev }}
-                Previous: <a href="{{ .Prev.URL | relURL}}">{{ .Prev.Title | markdownify }}</a>
-            {{ end }}
-        </div>
-        <div>
-            {{ if .Next }}
-                Next: <a href="{{ .Next.URL | relURL }}">{{ .Next.Title | markdownify }}</a>
-            {{ end }}
-        </div>
-    {{ end }}
     </div>
 {{ end }}

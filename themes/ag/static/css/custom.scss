@@ -44,15 +44,6 @@ $fa-font-path: "./webfonts";
   background-color: $body-color;
 }
 
-.category::before {
-  content: "";
-  background-color: $body-color;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  left: -40px;
-}
-
 hr {
   border: 0;
   height: 1px;

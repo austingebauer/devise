@@ -11361,14 +11361,6 @@ readers do not read off random characters that represent icons */
   color: #f8f9fa;
   background-color: #333333; }
 
-.category::before {
-  content: "";
-  background-color: #333333;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  left: -40px; }
-
 hr {
   border: 0;
   height: 1px;

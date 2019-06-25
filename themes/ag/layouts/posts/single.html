@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 pb-2">
+                <a href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006"  }}</a>
+            </div>
+            <div class="col-12 col-sm-6 pb-2">
+                {{ range .Params.tags }}
+                    <small><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a></small>
+                {{ end }}
+            </div>
+        </div>
+
+        <h3>{{ .Title }}</h3>
+        {{ if .Params.Subtitle }}
+            <h5>{{ .Params.Subtitle }}</h5>
+        {{ end }}
+
+        <article>
+            {{ .Content }}
+        </article>
+    </div>
+{{ end }}
