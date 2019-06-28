@@ -110,8 +110,6 @@ NGINX modules have three roles:
 
 The "core" of Nginx simply takes care of all the network and application protocols and sets up the sequence of modules that are eligible to process a request.
 
-
-
 ## Compile the module
 
 Compile the module by first running the configure script with the --with-compat argument, which creates a standard 
