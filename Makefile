@@ -5,11 +5,11 @@ THEME_DIR = themes/ag
 server:
 	hugo server --watch --verbose --cleanDestinationDir --disableFastRender
 
-build:
+package:
 	npm run --prefix $(THEME_DIR) build
 
-watch: build
+dev: build
 	npm run --prefix $(THEME_DIR) watch
 
-publish: build
+build: package
 	hugo
