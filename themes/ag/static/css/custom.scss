@@ -51,8 +51,14 @@ hr {
           rgba(51, 51, 51, 0.3), rgba(0, 0, 0, 0));
 }
 
-header h2 {
+
+h1, h2 {
   letter-spacing: -0.085rem;
+  font-weight: 700;
+}
+
+h3, h4 {
+  letter-spacing: -0.065rem;
   font-weight: 700;
 }
 

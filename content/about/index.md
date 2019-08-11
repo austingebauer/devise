@@ -6,36 +6,28 @@ tags: []
 categories: []
 ---
 
-#### About me  
+#### About Me  
 
-I'm Austin Gebauer. :wave: 
-
-I live in Seattle, WA. :umbrella:
-
-I'm a software engineer. :electric_plug: 
+Hello :wave: I'm Austin Gebauer. I live in Seattle, WA. I'm a software engineer. 
 
 I studied computer science at the 
-<a href="https://www.washington.edu/" target="_blank">University of Washington</a>. :cherry_blossom:
+<a href="https://www.washington.edu/" target="_blank">University of Washington</a>.
 
 I'm  currently working on networking software for 
 <a href="https://www.nginx.com/" target="_blank">NGINX</a> as a part of 
-<a href="https://f5.com" target="_blank">F5 Networks</a>. :wrench:
+<a href="https://f5.com" target="_blank">F5 Networks</a>.
 
-#### This blog
+#### This Blog
 
-I love to find out how things work at a deep level. 
-
-I love to share what I've learned in simple, cohesive writing.
-
-This blog is an outlet for me to do just that.
+This blog is an outlet for me to share things that I've learned with others.
 
 Most of my posts will answer questions similar to:
 
 - How does `X` work?
-- How could you build `X`?
+- How could you build an `X`?
 - Why do we use `X` for `Y`?
 
-#### Talking to me
+#### Reaching Me
 
 You can reach me by email at <a href="mailto:gebauer.austin@gmail.com">gebauer.austin@gmail.com</a>.
 
