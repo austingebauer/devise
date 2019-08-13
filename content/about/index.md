@@ -21,7 +21,7 @@ I'm  currently working on networking software for
 
 This blog is an outlet for me to share things that I've learned with others.
 
-Most of my posts will answer questions similar to:
+Most of my [posts](/posts) will answer questions similar to:
 
 - How does `X` work?
 - How could you build an `X`?

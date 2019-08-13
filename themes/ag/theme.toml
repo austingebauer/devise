@@ -3,7 +3,7 @@
 
 name = "ag"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/austingebauer/hugo-dev-theme/blob/master/LICENSE"
 description = ""
 homepage = "http://example.com/"
 tags = ["tags"]
@@ -13,9 +13,3 @@ min_version = "0.41"
 [author]
   name = "Austin Gebauer"
   homepage = "austingebauer.me"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
