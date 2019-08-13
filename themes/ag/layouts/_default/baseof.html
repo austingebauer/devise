@@ -4,7 +4,9 @@
     <body>
         <div id="content" class="mx-auto">
             {{- partial "header.html" . -}}
-            {{- block "main" . }}{{- end }}
+            <div class="container pt-2">
+                {{- block "main" . }}{{- end }}
+            </div>
             {{- partial "footer.html" . -}}
         </div>
     </body>

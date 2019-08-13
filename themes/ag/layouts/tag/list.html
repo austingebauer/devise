@@ -1,11 +1,9 @@
 {{ define "main" }}
-    <div>
-        <ul>
-        {{ range $.Site.Taxonomies.tags.ByCount }}
-            <li>
-                <a href="/tags{{ .Name | relURL }}">{{ .Name }}</a> - {{ .Count }} Articles
-            </li>
-        {{ end }}
-        </ul>
-    </div>
+    <ul>
+    {{ range $.Site.Taxonomies.tags.ByCount }}
+        <li>
+            <a href="/tags{{ .Name | relURL }}">{{ .Name }}</a> - {{ .Count }} Articles
+        </li>
+    {{ end }}
+    </ul>
 {{ end }}

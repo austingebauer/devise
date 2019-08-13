@@ -1,14 +1,38 @@
 {{ define "main" }}
-    <div class="container">
-        <ul>
-        {{ range .Pages }}
-            <li>
-                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-                    {{ .Date.Format "Jan 2, 2006" }}
-                </time>
-                <a href="{{ .URL | relURL }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title }}</a>
-            </li>
-        {{ end }}
-        </ul>
+    <div class="pl-sm-4 ml-sm-5">
+        <div class="row">
+            <div class="col-12">
+                {{ $recentposts := 10 }}
+                {{ if .Params.recentposts }}
+                    {{ $recentposts = .Params.recentposts }}
+                {{ end }}
+
+                <div class="pb-3">
+                    <h5><span class="badge category">Recent</span></h5>
+                    <ul class="list-unstyled">
+                        {{ range first $recentposts (where .Pages "Type" "posts" ) }}
+                            <li>
+                                {{ .Date.Format "Jan 2 2006" }}
+                                <a href="{{ .URL }}">{{ .Title }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                {{ range .Site.Taxonomies.categories.ByCount }}
+                    <div class="pb-3">
+                        <h5><span class="badge category">{{ humanize .Name }}</span></h5>
+                        <ul class="list-unstyled">
+                            {{ range .Pages }}
+                                <li>
+                                    {{ .Date.Format "Jan 2 2006" }}
+                                    <a href="{{ .URL }}">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
     </div>
 {{ end }}
