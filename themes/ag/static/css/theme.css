@@ -11373,3 +11373,10 @@ h1, h2 {
 h3, h4 {
   letter-spacing: -0.065rem;
   font-weight: 700; }
+
+#index-content h3, #index-content h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em; }
+
+p {
+  margin-bottom: 0.7rem; }
