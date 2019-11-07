@@ -20,8 +20,7 @@ This blog is an outlet for me to share things that I've learned with others.
 Most of my [posts](/posts) will answer questions similar to:
 
 - How does `X` work?
-- How could you build an `X`?
-- Why do we use `X` for `Y`?
+- How do you build an `X`?
 
 #### Reaching Me
 
