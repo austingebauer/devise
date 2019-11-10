@@ -1,9 +1,10 @@
-baseURL = "http://example.com/"
+baseURL = "http://austingebauer.com/"
 languageCode = "en-us"
-title = "austing.dev"
+title = "austingebauer"
 theme = "ag"
 relativeURLs = true
 enableEmoji = true
+googleAnalytics = "UA-150288366-2"
 
 # Use syntax highlighting of the theme
 pygmentsUseClasses = false
