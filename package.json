@@ -1,7 +1,7 @@
 {
-  "name": "ag",
+  "name": "hugo-dev-theme",
   "version": "1.0.0",
-  "description": "ag hugo theme",
+  "description": "hugo-dev-theme hugo theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

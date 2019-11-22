@@ -1,14 +1,14 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "ag"
+name = "hugo-dev-theme"
 license = "MIT"
 licenselink = "https://github.com/austingebauer/hugo-dev-theme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = ["tags"]
+description = "A minimal hugo blog theme for software developers"
+homepage = "http://austingebauer.com/"
+tags = ["developer"]
 features = []
-min_version = "0.41"
+min_version = "0.42"
 
 [author]
   name = "Austin Gebauer"
