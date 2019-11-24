@@ -1,24 +1,27 @@
 <header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-3 pb-1 pt-sm-4">
-            <img id="me" class="rounded-circle" src="/img/me.jpeg">
+            <a href="/" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle" src="{{ .Site.Params.home_image }}"
+                     alt="Austin Gebauer Personal Image">
+            </a>
         </div>
         <div class="col-sm-8 col-12 text-sm-left text-center">
-            <h2 class="m-0 mb-2 mt-4">Austin Gebauer</h2>
-            <p class="text-muted mb-1">Software Engineer | NGINX | Seattle, WA</p>
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="/" class="text-decoration-none text-dark">
+                    {{ .Site.Params.header_title }}
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                {{ .Site.Params.header_subtitle }}
+            </p>
             <ul id="nav-links" class="list-inline mb-2">
-                <li class="list-inline-item">
-                    <a href="/" class="badge badge-white">About</a>
-                </li>
-                {{/*<li class="list-inline-item">*/}}
-                    {{/*<a href="/about" class="badge badge-white">About</a>*/}}
-                {{/*</li>*/}}
-                <li class="list-inline-item">
-                    <a href="/posts" class="badge badge-white">Posts</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="/categories" class="badge badge-white">Categories</a>
-                </li>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    <li class="list-inline-item">
+                        <a class="badge badge-white {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
             </ul>
             <ul id="nav-social" class="list-inline">
                 <li class="list-inline-item mr-3">

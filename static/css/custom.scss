@@ -1,6 +1,5 @@
 // === Import Bootstrap and variable overrides ===
 $body-bg: #f8f9fa;
-$body-color: #333333;
 $font-family-base: "Helvetica Neue", Arial, sans-serif;
 $font-size-base: 0.95rem;
 
@@ -20,9 +19,10 @@ $fa-font-path: "./webfonts";
 #content {
   width: 100%;
   max-width: 650px;
+  min-height: calc(100vh - 85px);
 }
 
-#me {
+#home-image {
   width: 120px;
   height: 120px;
   border: solid 5px white;

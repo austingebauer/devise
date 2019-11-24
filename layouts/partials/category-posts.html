@@ -1,0 +1,36 @@
+<div class="pl-sm-4 ml-sm-5 pt-2">
+    <div class="row">
+        <div class="col-12">
+            {{ $recent := 5 }}
+            {{ if .Site.Params.recent_posts }}
+                {{ $recent = .Site.Params.recent_posts }}
+            {{ end }}
+
+            <div class="pb-3">
+                <h5><span class="badge category">Recent</span></h5>
+                <ul class="list-unstyled">
+                    {{ range first $recent (where .Site.RegularPages "Type" "posts" ) }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            {{ range .Site.Taxonomies.categories.ByCount }}
+            <div class="pb-3">
+                <h5><span class="badge category">{{ humanize .Name }}</span></h5>
+                <ul class="list-unstyled">
+                    {{ range .Pages }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
