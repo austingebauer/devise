@@ -20,7 +20,11 @@
 
             {{ range .Site.Taxonomies.categories.ByCount }}
             <div class="pb-3">
-                <h5><span class="badge category">{{ humanize .Name }}</span></h5>
+                <h5>
+                    <span class="badge category text-capitalize">
+                        {{ .Name | humanize }}
+                    </span>
+                </h5>
                 <ul class="list-unstyled">
                     {{ range .Pages }}
                     <li>
