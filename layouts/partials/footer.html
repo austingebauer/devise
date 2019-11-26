@@ -1,5 +1,5 @@
-<footer class="text-center">
+<footer class="text-center pb-1">
     <small class="text-muted">
-        &copy; Copyright {{ now.Format "2006"}}, Austin Gebauer
+        {{ .Site.Params.footer_text | safeHTML }}
     </small>
 </footer>
