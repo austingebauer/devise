@@ -1,9 +1,8 @@
 <header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
-        <div class="col-sm-4 col-12 text-sm-right text-center pt-3 pb-1 pt-sm-4">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="/" class="text-decoration-none">
-                <img id="home-image" class="rounded-circle" src="{{ .Site.Params.home_image }}"
-                     alt="Austin Gebauer Personal Image">
+                <img id="home-image" class="rounded-circle" src="{{ .Site.Params.home_image }}" />
             </a>
         </div>
         <div class="col-sm-8 col-12 text-sm-left text-center">
@@ -23,6 +22,7 @@
                     </li>
                 {{ end }}
             </ul>
+            <!-- TODO: parameterize these icons and links-->
             <ul id="nav-social" class="list-inline">
                 <li class="list-inline-item mr-3">
                     <a href="https://github.com/austingebauer" target="_blank">
