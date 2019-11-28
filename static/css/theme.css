@@ -11388,3 +11388,6 @@ article img {
 article h4 {
   margin-top: 2.2rem;
   margin-bottom: 0.7rem; }
+
+article a {
+  text-decoration: underline; }
