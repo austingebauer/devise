@@ -11359,7 +11359,7 @@ readers do not read off random characters that represent icons */
   left: 1px; }
 
 .category {
-  color: #f8f9fa;
+  color: white;
   background-color: #212529; }
 
 hr {
@@ -11375,19 +11375,18 @@ h3, h4 {
   letter-spacing: -0.065rem;
   font-weight: 700; }
 
-#index-content h3, #index-content h4 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em; }
-
 p {
   margin-bottom: 0.7rem; }
 
-article img {
+header h2 a, header h2 a:hover {
+  color: #212529; }
+
+img {
   border-radius: 0.20rem; }
 
-article h4 {
+h4 {
   margin-top: 2.2rem;
   margin-bottom: 0.7rem; }
 
-article a {
+a {
   text-decoration: underline; }
