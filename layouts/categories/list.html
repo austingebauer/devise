@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="pl-sm-4 ml-sm-5">
+    <h4>{{ if eq .Name "Categories" }} Categories {{ else }} Category - {{ .Name }} {{ end }}</h4>
+    {{ $outerName := .Name }}
+    <ul class="list-unstyled">
+        {{ range .Pages }}
+        <li>
+            {{ if ne $outerName "Categories" }}
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                {{ .Date.Format "Jan 2 2006" }}
+                </time>
+            {{ end }}
+            <a href="{{ .URL | relURL }}">
+                {{ .Title }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
