@@ -11362,6 +11362,12 @@ readers do not read off random characters that represent icons */
   color: white;
   background-color: #212529; }
 
+.highlight > pre {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid;
+  border-color: #ddd #ddd #ccc;
+  border-radius: 3px; }
+
 hr {
   border: 0;
   height: 1px;

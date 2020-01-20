@@ -44,6 +44,13 @@ $fa-font-path: "./webfonts";
   background-color: $body-color;
 }
 
+.highlight > pre {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid;
+  border-color: #ddd #ddd #ccc;
+  border-radius: 3px;
+}
+
 hr {
   border: 0;
   height: 1px;
