@@ -11342,7 +11342,7 @@ readers do not read off random characters that represent icons */
 #content {
   width: 100%;
   max-width: 650px;
-  min-height: calc(100vh - 85px); }
+  min-height: calc(100vh - 105px); }
 
 #home-image {
   width: 120px;
