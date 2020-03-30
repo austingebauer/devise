@@ -1,15 +1,15 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "hugo-dev-theme"
+name = "devise"
 license = "MIT"
-licenselink = "https://github.com/austingebauer/hugo-dev-theme/blob/master/LICENSE"
-description = "A minimal hugo blog theme for software developers"
+licenselink = "https://github.com/austingebauer/devise/blob/master/LICENSE"
+description = "A minimal hugo blog theme"
 homepage = "http://austingebauer.com/"
-tags = ["developer"]
+tags = ["developer", "blog", "minimal", "personal"]
 features = []
-min_version = "0.42"
+min_version = "0.59.1"
 
 [author]
   name = "Austin Gebauer"
-  homepage = "austingebauer.com"
+  homepage = "http://austingebauer.com/"
