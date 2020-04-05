@@ -93,7 +93,7 @@ copyright = "&copy; Copyright Year, Your Name"
     href = ""
   [[params.social]]
     fa_icon = "fas fa-at fa-1x"
-    href = ""
+    href = "mailto:gebauer.austin@gmail.com" # Link can also be a mailto
 ```
 
 ### Updating
