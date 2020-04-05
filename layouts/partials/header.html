@@ -3,14 +3,14 @@
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
             <a href="/" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
-                    {{ if isset .Site.Params "home_image" }}
+                    {{ if (and (isset .Site.Params "home_image") (fileExists (printf "static/%s" (strings.TrimPrefix "/" .Site.Params.home_image)))) }}
                         {{ if hasPrefix .Site.Params.home_image "/" }}
                             src="{{ .Site.Params.home_image }}"
                         {{ else }}
                             src="{{ printf "/%s" .Site.Params.home_image }}"
                         {{ end }}
                     {{ else }}
-                        src="https://cdn.clipart.email/83451492858686fbb12fdf8df0957c94_lil-silhouettes-by-lil-squid_481-512.png"
+                        src="/images/avatar.png"
                     {{ end }}
                 />
             </a>
