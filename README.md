@@ -1,8 +1,12 @@
 # Devise
 
-A minimal [hugo](https://gohugo.io/) blog theme.
+A fast and minimal [Hugo](https://gohugo.io/) theme for blogs.
+
+![screenshot.png](images/screenshot.png)
 
 ## Installation
+
+- Hugo Version [0.60.0+](https://github.com/gohugoio/hugo/releases/)
 
 From the root of your Hugo site, run the following:
 

@@ -32,7 +32,7 @@ copyright = "&copy; Copyright Year, Your Name"
 
 [params]
   header_title = "Your Name"
-  header_subtitle = "Your Subtitle Text"
+  header_subtitle = "Your Creative Subtitle"
   home_image = "/images/avatar.png"
   recent_posts = 5
   mainSections = ["posts", "post", "blog"]
