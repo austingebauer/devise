@@ -86,14 +86,14 @@ copyright = "&copy; Copyright Year, Your Name"
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
     href = "http://github.com/youruser"      # Link to associate with icon
   [[params.social]]
-  	fa_icon = "fab fa-linkedin-in fa-1x"
-  	href = ""
+    fa_icon = "fab fa-linkedin-in fa-1x"
+    href = ""
   [[params.social]]
-  	fa_icon = "fab fa-twitter fa-1x"
-  	href = ""
+    fa_icon = "fab fa-twitter fa-1x"
+    href = ""
   [[params.social]]
-  	fa_icon = "fas fa-at fa-1x"
-  	href = ""
+    fa_icon = "fas fa-at fa-1x"
+    href = ""
 ```
 
 ### Updating
