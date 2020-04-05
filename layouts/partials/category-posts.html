@@ -1,7 +1,7 @@
 <div class="pl-sm-4 ml-sm-5 pt-2">
     <div class="row">
         <div class="col-12">
-            {{ $recent := 5 }}
+            {{ $recent := 7 }}
             {{ if .Site.Params.recent_posts }}
                 {{ $recent = .Site.Params.recent_posts }}
             {{ end }}
@@ -18,7 +18,7 @@
                 </ul>
             </div>
 
-            {{ range .Site.Taxonomies.categories.ByCount }}
+            {{ range $key, $taxonomy := .Site.Taxonomies.categories.Alphabetical }}
             <div class="pb-3">
                 <h5>
                     <span class="badge category text-capitalize">
@@ -26,7 +26,7 @@
                     </span>
                 </h5>
                 <ul class="list-unstyled">
-                    {{ range .Pages }}
+                    {{ range $taxonomy.Pages }}
                     <li>
                         {{ .Date.Format "Jan 2 2006" }}
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
