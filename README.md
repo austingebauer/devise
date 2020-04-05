@@ -113,6 +113,9 @@ devise theme:
 hugo server --themesDir ../.. --watch --verbose --cleanDestinationDir --disableFastRender
 ```
 
+This theme is also used on [Austin Gebauer's](https://github.com/austingebauer) personal website, 
+located at [austingebauer.com](https://austingebauer.com)
+
 ## Contributing
 
 If you have an idea for a new feature or found a bug, please feel free to use Github
