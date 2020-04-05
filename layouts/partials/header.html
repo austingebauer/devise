@@ -18,11 +18,19 @@
         <div class="col-sm-8 col-12 text-sm-left text-center">
             <h2 class="m-0 mb-2 mt-4">
                 <a href="/" class="text-decoration-none">
-                    {{ .Site.Params.header_title }}
+                    {{ if isset .Site.Params "header_title" }}
+                        {{ .Site.Params.header_title }}
+                    {{ else }}
+                        Your Name
+                    {{ end }}
                 </a>
             </h2>
             <p class="text-muted mb-1">
-                {{ .Site.Params.header_subtitle }}
+                {{ if isset .Site.Params "header_subtitle" }}
+                    {{ .Site.Params.header_subtitle }}
+                {{ else }}
+                    Your Subtitle Text
+                {{ end }}
             </p>
             <ul id="nav-links" class="list-inline mb-2">
                 {{ $currentPage := . }}

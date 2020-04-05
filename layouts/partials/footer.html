@@ -1,6 +1,11 @@
 <footer class="text-center pb-1">
     <small class="text-muted">
-        {{ .Site.Params.footer_text | safeHTML }}<br>
+        {{ if isset .Site.Params "footer_text" }}
+            {{ .Site.Params.footer_text | safeHTML }}
+        {{ else }}
+            {{ "&copy; Copyright Year, Your Name" | safeHTML }}
+        {{ end }}
+        <br>
         Powered by <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
     </small>
 </footer>
