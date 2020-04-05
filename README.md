@@ -1,6 +1,6 @@
 # Devise
 
-A fast, minimal, and responsive [Hugo](https://gohugo.io/) theme for blogs.
+A fast, minimal, responsive [Hugo](https://gohugo.io/) theme for blogs.
 
 ![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
 
