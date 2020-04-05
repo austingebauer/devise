@@ -2,7 +2,10 @@
 
 A fast, minimal, and responsive [Hugo](https://gohugo.io/) theme for blogs.
 
-Configuration Features:
+![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
+
+## Configuration Features
+
 - General
     - Hugo's Builtin [Content Management](https://gohugo.io/content-management/) Features
     - Google Analytics
@@ -14,8 +17,6 @@ Configuration Features:
 - Main Body
     - Last 'N' Recent Pages
     - Categorical Page Grouping
-
-![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
 
 ## Usage
 
