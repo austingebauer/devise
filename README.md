@@ -2,11 +2,11 @@
 
 A fast, minimal, responsive [Hugo](https://gohugo.io/) theme for blogs.
 
+![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
+
 For a live demo of the theme, see at: 
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.com](https://austingebauer.com)
-
-![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
 
 ## Configuration Features
 
