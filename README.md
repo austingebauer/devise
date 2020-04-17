@@ -2,6 +2,10 @@
 
 A fast, minimal, responsive [Hugo](https://gohugo.io/) theme for blogs.
 
+For a live demo of the theme, see at: 
+- [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
+- [austingebauer.com](https://austingebauer.com)
+
 ![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
 
 ## Configuration Features
@@ -106,15 +110,16 @@ $ git submodule update --remote themes/devise
 
 ## Demo
 
-To run a live demo of the theme, run the following from the `exampleSite` directory of the 
+To run a live demo of the theme on your laptop, run the following from the `exampleSite` directory of the 
 devise theme:
 
 ```bash
 hugo server --themesDir ../.. --watch --verbose --cleanDestinationDir --disableFastRender
 ```
 
-This theme is also used on [Austin Gebauer's](https://github.com/austingebauer) personal website, 
-located at [austingebauer.com](https://austingebauer.com)
+For a live demo of the theme, see at: 
+- [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
+- [austingebauer.com](https://austingebauer.com)
 
 ## Contributing
 
