@@ -12,6 +12,7 @@ For a live demo of the theme, see at:
 
 - General
     - Hugo's Builtin [Content Management](https://gohugo.io/content-management/) Features
+    - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes are automatically available via HTML/CSS in your Markdown content
     - Google Analytics
 - Header
     - Title and Subtitle
