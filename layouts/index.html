@@ -1,3 +1,7 @@
 {{ define "main" }}
-    {{- partial "category-posts.html" . -}}
+    {{ if .Content }}
+        {{ .Content }}
+    {{ else }}
+        {{- partial "category-posts.html" . -}}
+    {{ end }}
 {{ end }}
