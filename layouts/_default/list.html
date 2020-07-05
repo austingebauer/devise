@@ -6,7 +6,7 @@
                 <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
                     {{ .Date.Format "Jan 2 2006" }}
                 </time>
-                <a href="{{ .URL | relURL }}">
+                <a href="{{ .RelPermalink }}">
                     {{ if .Draft }}DRAFT: {{end}}{{ .Title }}
                 </a>
             </li>

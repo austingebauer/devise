@@ -10,7 +10,7 @@
                 {{ .Date.Format "Jan 2 2006" }}
                 </time>
             {{ end }}
-            <a href="{{ .URL | relURL }}">
+            <a href="{{ .RelPermalink }}">
                 {{ .Title }}
             </a>
         </li>
