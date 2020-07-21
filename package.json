@@ -4,13 +4,10 @@
   "description": "devise hugo theme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --include-path node_modules static/css/custom.scss static/css/theme.css",
-    "watch": "node-sass --watch --include-path node_modules static/css/custom.scss static/css/theme.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "node-sass": "^4.14.1"
+    "bootstrap": "^4.3.1"
   },
   "keywords": [
     "hugo",
