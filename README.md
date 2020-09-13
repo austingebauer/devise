@@ -17,6 +17,7 @@ For a live demo of the theme, see at:
 - Ability to use [Font Awesome](https://fontawesome.com/) icons
 - Ability to customize the theme styles via [Sass](https://sass-lang.com/)
 - Ability to customize the following items via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+    - Meta description
     - Title
     - Subtitle
     - Image
@@ -85,6 +86,7 @@ copyright = "&copy; Copyright Year, Your Name"
 
 # Configuration Features
 [params]
+  description = "Your meta description"      # Your meta description of the site
   header_title = "Your Name"                 # Your header title
   header_subtitle = "Your Creative Subtitle" # Your header subtitle
   home_image = "/images/avatar.png"          # Path to header image starting from the static directory
