@@ -8,21 +8,22 @@ For a live demo of the theme, see at:
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.com](https://austingebauer.com)
 
-## Configuration Features
+## Features
 
-- General
-    - Hugo's Builtin [Content Management](https://gohugo.io/content-management/) Features
-    - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes are automatically available via HTML/CSS in your Markdown content
-    - [Font Awesome](https://fontawesome.com/) Icons with Links
-    - Ability to customize CSS styles
-    - Google Analytics
-- Header
-    - Title and Subtitle
+- All of Hugo's builtin [Content Management](https://gohugo.io/content-management/)
+- Easy installation of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+- Ability to use [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes via HTML/CSS in Markdown
+- Ability to use [Font Awesome](https://fontawesome.com/) icons
+- Ability to customize the theme styles via [Sass](https://sass-lang.com/)
+- Ability to customize the following items via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+    - Title
+    - Subtitle
     - Image
-    - Navigation Menu
-- Main Body
-    - Last 'N' Recent Pages
-    - Categorical Page Grouping
+    - Navigation menu
+    - Social icons
+    - Last 'n' recent posts
+    - Background color
+    - Font color
 
 ## Usage
 
@@ -116,15 +117,12 @@ $ git submodule update --remote themes/devise
 ### Adding Custom Styles
 
 Adding custom styles to the devise theme is simple. There are two options 
-available for doing so:
-
-1. Set style parameters in the `config.toml` file
-2. Add custom [Sass](https://sass-lang.com/) to your assets folder
+available for doing so.
 
 #### Option 1:
 
 In the `config.toml` file of your website, you can set the following custom style
-parameters: 
+parameters:
 
 ```toml
 [params.style]
@@ -132,10 +130,13 @@ parameters:
   fontColor = "#212529"
 ```
 
+If you'd like to see other custom styles available as config parameters, please open an [issue](https://github.com/austingebauer/devise/issues).
+
 #### Option 2:
 
-To add custom [Sass](https://sass-lang.com/) to the devise theme, you'll 
-need to add the following file to the root directory of your site:
+To add custom [Sass](https://sass-lang.com/) styles to the devise theme, you'll 
+need to add the following file to the [assets](https://gohugo.io/hugo-pipes/introduction/#asset-directory) 
+directory of your site:
 
 - `assets/sass/custom.scss`
 
