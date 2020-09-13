@@ -12,6 +12,7 @@ For a live demo of the theme, see at:
 
 - All of Hugo's builtin [Content Management](https://gohugo.io/content-management/)
 - Easy installation of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+- Fast loading with a 95-100 score on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 - Ability to use [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes via HTML/CSS in Markdown
 - Ability to use [Font Awesome](https://fontawesome.com/) icons
 - Ability to customize the theme styles via [Sass](https://sass-lang.com/)
@@ -24,7 +25,6 @@ For a live demo of the theme, see at:
     - Last 'n' recent posts
     - Background color
     - Font color
-- Fast loading with a 95-100 score on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 
 ## Usage
 
