@@ -8,20 +8,22 @@ For a live demo of the theme, see at:
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.com](https://austingebauer.com)
 
-## Configuration Features
+## Features
 
-- General
-    - Hugo's Builtin [Content Management](https://gohugo.io/content-management/) Features
-    - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes are automatically available via HTML/CSS in your Markdown content
-    - Google Analytics
-- Header
-    - Title and Subtitle
+- All of Hugo's builtin [Content Management](https://gohugo.io/content-management/)
+- Easy installation of [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+- Ability to use [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes via HTML/CSS in Markdown
+- Ability to use [Font Awesome](https://fontawesome.com/) icons
+- Ability to customize the theme styles via [Sass](https://sass-lang.com/)
+- Ability to customize the following items via Hugo [configuration](https://gohugo.io/getting-started/configuration/) file
+    - Title
+    - Subtitle
     - Image
-    - Navigation Menu
-    - [Font Awesome](https://fontawesome.com/) Icons with Links
-- Main Body
-    - Last 'N' Recent Pages
-    - Categorical Page Grouping
+    - Navigation menu
+    - Social icons
+    - Last 'n' recent posts
+    - Background color
+    - Font color
 
 ## Usage
 
@@ -87,6 +89,9 @@ copyright = "&copy; Copyright Year, Your Name"
   home_image = "/images/avatar.png"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [params.style]                             # CSS style overrides
+    backgroundColor = "#f8f9fa"
+    fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
     href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
@@ -108,6 +113,36 @@ To get updates to the theme, run the following from the root directory of your H
 ```
 $ git submodule update --remote themes/devise
 ```
+
+### Adding Custom Styles
+
+Adding custom styles to the devise theme is simple. There are two options 
+available for doing so.
+
+#### Option 1:
+
+In the `config.toml` file of your website, you can set the following custom style
+parameters:
+
+```toml
+[params.style]
+  backgroundColor = "#f8f9fa"
+  fontColor = "#212529"
+```
+
+If you'd like to see other custom styles available as config parameters, please open an [issue](https://github.com/austingebauer/devise/issues).
+
+#### Option 2:
+
+To add custom [Sass](https://sass-lang.com/) styles to the devise theme, you'll 
+need to add the following file to the [assets](https://gohugo.io/hugo-pipes/introduction/#asset-directory) 
+directory of your site:
+
+- `assets/sass/custom.scss`
+
+In the file, you can use [Sass](https://sass-lang.com/) syntax to declare
+your custom styles. After doing so, you should see custom styling added to 
+your devise based Hugo site.
 
 ## Demo
 
