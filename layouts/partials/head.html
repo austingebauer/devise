@@ -10,8 +10,10 @@
 
     {{/* Adds custom styles capability */}}
     {{ $customTemplate := resources.Get "sass/custom.scss" }}
+    {{ if $customTemplate }}
     {{ $custom := $customTemplate | resources.ExecuteAsTemplate "css/custom.scss" . | toCSS | minify }}
     <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+    {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}
 </head>
