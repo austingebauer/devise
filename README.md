@@ -24,6 +24,7 @@ For a live demo of the theme, see at:
     - Last 'n' recent posts
     - Background color
     - Font color
+- Fast loading with a 95-100 score on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 
 ## Usage
 
