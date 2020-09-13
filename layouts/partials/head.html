@@ -2,8 +2,16 @@
     <title>{{ .Title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ $sassTemplate := resources.Get "sass/template.scss" }}
-    {{ $style := $sassTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{/* Adds complete override capability */}}
+    {{ $overrideTemplate := resources.Get "sass/override.scss" }}
+    {{ $override := $overrideTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $override.Permalink }}">
+
+    {{/* Adds custom styles capability */}}
+    {{ $customTemplate := resources.Get "sass/custom.scss" }}
+    {{ $custom := $customTemplate | resources.ExecuteAsTemplate "css/custom.scss" . | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $custom.Permalink }}">
+
     {{ template "_internal/google_analytics.html" . }}
 </head>

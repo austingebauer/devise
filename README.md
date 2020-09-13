@@ -13,12 +13,13 @@ For a live demo of the theme, see at:
 - General
     - Hugo's Builtin [Content Management](https://gohugo.io/content-management/) Features
     - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) CSS classes are automatically available via HTML/CSS in your Markdown content
+    - [Font Awesome](https://fontawesome.com/) Icons with Links
+    - Ability to customize CSS styles
     - Google Analytics
 - Header
     - Title and Subtitle
     - Image
     - Navigation Menu
-    - [Font Awesome](https://fontawesome.com/) Icons with Links
 - Main Body
     - Last 'N' Recent Pages
     - Categorical Page Grouping
@@ -87,6 +88,9 @@ copyright = "&copy; Copyright Year, Your Name"
   home_image = "/images/avatar.png"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [params.style]                             # CSS style overrides
+    backgroundColor = "#f8f9fa"
+    fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
     href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
@@ -108,6 +112,36 @@ To get updates to the theme, run the following from the root directory of your H
 ```
 $ git submodule update --remote themes/devise
 ```
+
+### Adding Custom Styles
+
+Adding custom styles to the devise theme is simple. There are two options 
+available for doing so:
+
+1. Set style parameters in the `config.toml` file
+2. Add custom [Sass](https://sass-lang.com/) to your assets folder
+
+#### Option 1:
+
+In the `config.toml` file of your website, you can set the following custom style
+parameters: 
+
+```toml
+[params.style]
+  backgroundColor = "#f8f9fa"
+  fontColor = "#212529"
+```
+
+#### Option 2:
+
+To add custom [Sass](https://sass-lang.com/) to the devise theme, you'll 
+need to add the following file to the root directory of your site:
+
+- `assets/sass/custom.scss`
+
+In the file, you can use [Sass](https://sass-lang.com/) syntax to declare
+your custom styles. After doing so, you should see custom styling added to 
+your devise based Hugo site.
 
 ## Demo
 
