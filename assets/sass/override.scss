@@ -1,6 +1,6 @@
 // === Import Bootstrap and set variable overrides ===
-$body-bg: {{ .Param "style.backgroundColor" }};
-$body-color: {{ .Param "style.fontColor" }};
+$body-bg: {{ if .Param "style.backgroundColor" }}{{ .Param "style.backgroundColor"}}{{ else }}#f8f9fa{{ end }};
+$body-color: {{ if .Param "style.fontColor" }}{{ .Param "style.fontColor"}}{{ else }}#212529{{ end }};
 $font-family-base: "Helvetica Neue", Arial, sans-serif;
 $font-size-base: 0.95rem;
 @import "../../node_modules/bootstrap/scss/bootstrap";
