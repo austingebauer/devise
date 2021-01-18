@@ -26,6 +26,8 @@ $fa-font-path: "../webfonts";
   height: 120px;
   border: solid 5px white;
   box-shadow: 0px 10px 7px -10px rgba(0,0,0,0.6);
+  border-radius: 0.20rem;
+  padding: 0px;
 }
 
 #nav-links {
@@ -80,7 +82,10 @@ header {
 }
 
 img {
-  border-radius: 0.20rem;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border-radius: .2rem;
 }
 
 h4 {
