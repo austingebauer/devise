@@ -5,6 +5,7 @@
             {{ if isset .Site.Params "recent_posts" }}
                 {{ $recent = .Site.Params.recent_posts }}
             {{ end }}
+            {{ if gt $recent 0 }}
             <div class="pb-3">
                 <h5><span class="badge category">Recent</span></h5>
                 <ul class="list-unstyled">
@@ -16,6 +17,7 @@
                     {{ end }}
                 </ul>
             </div>
+            {{ end }}
 
             {{ range $key, $taxonomy := .Site.Taxonomies.categories.Alphabetical }}
                 <div class="pb-3">
