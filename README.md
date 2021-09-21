@@ -109,6 +109,38 @@ copyright = "&copy; Copyright Year, Your Name"
     href = ""
 ```
 
+#### Comments
+This theme supports comments with [Disqus](https://disqus.com), [Isso](https://posativ.org/isso) and [utterances](https://utteranc.es/).
+Disqus is a fully provided comment solutionm although the free tier is add supported.
+Isso is a lightweight, self-hosted server similar to disqus.
+Utterances is a comment widget leveraging Github issues for comments.
+Following are code snippets to enable each comment section.
+
+##### Disqus
+```toml
+disqusShortname = "my-disqus-shortname"
+```
+##### Isso
+Be sure to allow CORS on your server hosting the hugo site if the domain hosting isso is different to the domain hosting the hugo site.
+```toml
+data = "https://comments.example.com/"
+jsLocation = "https://comments.example.com/js/embed.min.js"
+id = "thread-id" #optional
+css = true #optional
+lang = "en" #optional
+replyToSelf = true #optional
+requireAuthor = false #optional
+requireEmail = false #optional
+avatar = true #optional
+avatar-bg = "#f0f0f0" #optional
+```
+##### utterances
+```toml
+[params.utterances]
+repo = "GithubUser/comment-repo"
+issue = "pathname" #optional
+theme = "github-light" #optional
+```
 ### Updating
 
 To get updates to the theme, run the following from the root directory of your Hugo site: 
