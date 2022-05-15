@@ -28,6 +28,8 @@ $fa-font-path: "../webfonts";
   box-shadow: 0px 10px 7px -10px rgba(0,0,0,0.6);
   border-radius: 0.20rem;
   padding: 0px;
+  object-fit: cover;
+  object-position: top;
 }
 
 #nav-links {
