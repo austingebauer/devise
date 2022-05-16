@@ -1,6 +1,13 @@
 {{ define "main" }}
+    <!-- To overwrite the default content for the theme which shows posts by 
+         category, populate your content/_index.html file. It will be rendered
+         instead of the default. For details on this configuration capability,
+         see https://gohugo.io/templates/homepage/#add-content-and-front-matter-to-the-homepage
+    -->
     {{ if .Content }}
-        {{ .Content }}
+        <div class="pl-sm-4 ml-sm-5">
+            {{ .Content }}
+        </div>
     {{ else }}
         {{- partial "category-posts.html" . -}}
     {{ end }}
