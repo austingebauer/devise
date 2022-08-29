@@ -1,6 +1,7 @@
 // === Import Bootstrap and set variable overrides ===
 $body-bg: {{ if .Param "style.backgroundColor" }}{{ .Param "style.backgroundColor"}}{{ else }}#f8f9fa{{ end }};
 $body-color: {{ if .Param "style.fontColor" }}{{ .Param "style.fontColor"}}{{ else }}#212529{{ end }};
+$home-image-border-color: {{ if .Param "style.homeImageBorderColor" }}{{ .Param "style.homeImageBorderColor"}}{{ else }}#ffffff{{ end }};
 $font-family-base: "Helvetica Neue", Arial, sans-serif;
 $font-size-base: 0.95rem;
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -24,7 +25,7 @@ $fa-font-path: "../webfonts";
 #home-image {
   width: 120px;
   height: 120px;
-  border: solid 5px white;
+  border: solid 5px $home-image-border-color;
   box-shadow: 0px 10px 7px -10px rgba(0,0,0,0.6);
   border-radius: 0.20rem;
   padding: 0px;
