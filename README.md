@@ -160,6 +160,14 @@ For a live demo of the theme, see at:
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.dev](https://austingebauer.dev)
 
+## Markdown tables not rendering corretcly?
+
+Go to :
+
+```
+layouts/shortcodes/tables.html
+```
+
 ## Contributing
 
 If you have an idea for a new feature or found a bug, please feel free to use Github
