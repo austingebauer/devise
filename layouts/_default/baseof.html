@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ if .Site.LanguageCode }}{{ .Site.LanguageCode }}{{ else }}en{{ end }}">
     {{- partial "head.html" . -}}
     <body>
         <div id="content" class="mx-auto">
