@@ -43,7 +43,7 @@
             <ul id="nav-social" class="list-inline">
                 {{ range .Site.Params.social }}
                     <li class="list-inline-item mr-3">
-                        <a href="{{ .href }}" target="_blank">
+                        <a href="{{ .href }}" target="_blank"{{ if .rel_me }} rel="me"{{ end }}>
                             <i class="{{ .fa_icon }} text-muted"></i>
                         </a>
                     </li>
