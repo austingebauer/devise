@@ -102,6 +102,10 @@ copyright = "&copy; Copyright Year, Your Name"
     fa_icon = "fab fa-linkedin-in fa-1x"
     href = ""
   [[params.social]]
+    fa_icon = "fab fa-mastodon fa-1x"
+    rel_me = true                            # Add a rel="me" attr for Mastodon link verification
+    href = ""
+  [[params.social]]
     fa_icon = "fab fa-twitter fa-1x"
     href = ""
   [[params.social]]
