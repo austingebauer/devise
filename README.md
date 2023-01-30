@@ -21,10 +21,12 @@ For a live demo of the theme, see at:
     - Title
     - Subtitle
     - Image
+    - Image border color
     - Navigation menu
     - Social icons
     - Last 'n' recent posts
     - Background color
+    - Font family
     - Font color
 
 ## Usage
@@ -94,6 +96,8 @@ copyright = "&copy; Copyright Year, Your Name"
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
+    homeImageBorderColor = "#ffffff"
+    fontFamilyBase = "Helvetica Neue"        # First-choice font
     fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
