@@ -134,6 +134,8 @@ parameters:
 ```toml
 [params.style]
   backgroundColor = "#f8f9fa"
+  homeImageBorderColor = "#ffffff"
+  fontFamilyBase = "Helvetica Neue"
   fontColor = "#212529"
 ```
 
