@@ -1,0 +1,19 @@
+{{ $page := . }}
+
+{{ $pagetitle := $page.Title | markdownify | plainify | htmlUnescape }}
+{{ $result := "" }}
+{{ $sitetitle := site.Title | markdownify | plainify | htmlUnescape }}
+
+{{ if and $pagetitle $sitetitle }}
+    {{ if .IsHome }}
+        {{ $result = $pagetitle }}
+    {{ else }}
+        {{ $result = printf "%s · %s" $pagetitle $sitetitle }}
+    {{ end }}
+{{ else if $pagetitle }}
+    {{ $result = $pagetitle }}
+{{ else if $sitetitle }}
+    {{ $result = $sitetitle }}
+{{ end }}
+
+{{ return $result }}
