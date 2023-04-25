@@ -91,7 +91,7 @@ copyright = "&copy; Copyright Year, Your Name"
   description = "Your meta description"      # Your meta description of the site
   header_title = "Your Name"                 # Your header title
   header_subtitle = "Your Creative Subtitle" # Your header subtitle
-  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
+  home_image = "/images/avatar.png"          # Path to header image starting from the static directory (optional)
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
