@@ -92,6 +92,8 @@ copyright = "&copy; Copyright Year, Your Name"
   header_title = "Your Name"                 # Your header title
   header_subtitle = "Your Creative Subtitle" # Your header subtitle
   home_image = "/images/avatar.png"          # Path to header image starting from the static directory (optional)
+  favicon = "/favicon.ico"                   # Path to favicon image starting from static. Defaults to "./favicon.ico"
+  favicon_type = "x-icon"                    # Image extension. Defaults to x-icon
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
@@ -99,6 +101,8 @@ copyright = "&copy; Copyright Year, Your Name"
     homeImageBorderColor = "#ffffff"
     fontFamilyBase = "Helvetica Neue"        # First-choice font
     fontColor = "#212529"
+    fontFamilyBase = "Helvetica Neue"
+    codeColor = "#e83e8c"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
     href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
