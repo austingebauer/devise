@@ -101,7 +101,6 @@ copyright = "&copy; Copyright Year, Your Name"
     homeImageBorderColor = "#ffffff"
     fontFamilyBase = "Helvetica Neue"        # First-choice font
     fontColor = "#212529"
-    fontFamilyBase = "Helvetica Neue"
     codeColor = "#e83e8c"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
