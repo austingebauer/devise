@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
+    {{/* Adds favicon specification to config.toml */}}
+    <link rel="icon" type= {{
+        if $.Site.Params.favicon_type }}{{ path.Join "image/" $.Site.Params.favicon_type }}{{ else }}{{ "image/x-icon" }}{{end
+        }} href= {{
+        if $.Site.Params.favicon }}{{ $.Site.Params.favicon }}{{ else }}{{ "/favicon.ico" }}{{end
+        }}>
+
     {{/* Adds complete override capability */}}
     {{ $overrideTemplate := resources.Get "sass/override.scss" }}
     {{ $override := $overrideTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | toCSS | minify }}
