@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+    <link rel="canonical" href="{{ .Permalink }}">
 
     {{/* Adds complete override capability */}}
     {{ $overrideTemplate := resources.Get "sass/override.scss" }}
