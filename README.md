@@ -94,6 +94,7 @@ copyright = "&copy; Copyright Year, Your Name"
   home_image = "/images/avatar.png"          # Path to header image starting from the static directory (optional)
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  category_list = true                       # Include category posts on the home page
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     homeImageBorderColor = "#ffffff"
