@@ -3,38 +3,40 @@
         <div class="col-12">
             {{ $recent := 7 }}
             {{ if isset .Site.Params "recent_posts" }}
-                {{ $recent = .Site.Params.recent_posts }}
+            {{ $recent = .Site.Params.recent_posts }}
             {{ end }}
             {{ if gt $recent 0 }}
             <div class="pb-3">
                 <h5><span class="badge category">Recent</span></h5>
                 <ul class="list-unstyled">
                     {{ range first $recent (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-                        <li>
-                            {{ .Date.Format "Jan 2 2006" }}
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </li>
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
                     {{ end }}
                 </ul>
             </div>
             {{ end }}
 
+            {{ if or (not (isset .Site.Params "category_list")) (.Site.Params.category_list)  }}
             {{ range $key, $taxonomy := .Site.Taxonomies.categories.Alphabetical }}
-                <div class="pb-3">
-                    <h5>
+            <div class="pb-3">
+                <h5>
                     <span class="badge category text-capitalize">
                         {{ .Name | humanize }}
                     </span>
-                    </h5>
-                    <ul class="list-unstyled">
-                        {{ range $taxonomy.Pages }}
-                            <li>
-                                {{ .Date.Format "Jan 2 2006" }}
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            </li>
-                        {{ end }}
-                    </ul>
-                </div>
+                </h5>
+                <ul class="list-unstyled">
+                    {{ range $taxonomy.Pages }}
+                    <li>
+                        {{ .Date.Format "Jan 2 2006" }}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
             {{ end }}
         </div>
     </div>
