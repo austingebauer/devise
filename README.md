@@ -6,7 +6,7 @@ A fast, minimal, responsive [Hugo](https://gohugo.io/) theme for blogs.
 
 For a live demo of the theme, see at: 
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
-- [austingebauer.dev](https://austingebauer.dev)
+- [austingebauer.com](https://austingebauer.com)
 
 ## Features
 
@@ -164,7 +164,7 @@ hugo server --themesDir ../.. --watch --verbose --cleanDestinationDir --disableF
 
 For a live demo of the theme, see at: 
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
-- [austingebauer.dev](https://austingebauer.dev)
+- [austingebauer.com](https://austingebauer.com)
 
 ## Contributing
 
