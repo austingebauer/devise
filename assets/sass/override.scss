@@ -4,6 +4,7 @@ $body-color: {{ if .Param "style.fontColor" }}{{ .Param "style.fontColor"}}{{ el
 $home-image-border-color: {{ if .Param "style.homeImageBorderColor" }}{{ .Param "style.homeImageBorderColor"}}{{ else }}#ffffff{{ end }};
 $font-family-base: {{ if .Param "style.fontFamilyBase"}}{{ .Param "style.fontFamilyBase"}},{{end}}"Helvetica Neue", Arial, sans-serif;
 $font-size-base: 0.95rem;
+$code-color: {{ if .Param "style.codeColor" }}{{ .Param "style.codeColor"}}{{ else }}"inherit"{{ end }};
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // === Import Font Awesome ===
